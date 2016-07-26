@@ -1,0 +1,73 @@
+.container {
+  display: flex;  
+  flex-flow: row wrap;
+}
+
+.container > * {
+  margin: 5px;
+  flex: 1 100%;
+}
+
+.title {
+  padding: 40px;
+  background: #aaaaaa;
+  order: 0;
+}
+
+.sidebar {
+  order: 1;
+}
+
+.sidebar img {
+  display: none;
+}
+
+.sidebar .menu > * {
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  background-color: #444444;
+}
+
+a {
+  color: white;
+}
+
+@media all and (min-width: 600px) {
+  .container    { padding: 0 10% 0 10%; }
+  .sidebar      { flex: 0 auto; }
+  .sidebar img  { width: 10vw; display: unset;}
+  .title        { flex: 3 0px; }
+  .sidebar      { order: 0;}
+  .title        { order: 1;}
+}
+
+@media all and (min-width: 1500px) {
+  .container { padding: 0 15% 0 15%;}
+}
+
+body {
+  padding: 2em;
+  font-family: "Courier";
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
