@@ -17,11 +17,14 @@ function navigate (event) {
 
 	switch (target) {
 		case "projects":
+			$(".about").hide();
+			$(".project").show();
 			type("/Projects");
-			$(".main").load("projects.html");
 			break;
 		case "about":
-			type("/About");
+			$(".project").hide();
+			$(".about").show();
+			type("/About Me");
 			break;
 		default:
 			break;

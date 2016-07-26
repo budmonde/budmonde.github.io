@@ -1,54 +1,73 @@
+/* Universal */
 .container {
   display: flex;  
   flex-flow: row wrap;
 }
+.sidebar { order: 0;}
+.content { order: 1;}
 
-.container > * {
-  margin: 5px;
-  flex: 1 100%;
-}
-
-.title {
-  padding: 40px;
-  background: #aaaaaa;
-  order: 0;
-}
-
-.sidebar {
-  order: 1;
-}
-
-.sidebar img {
-  display: none;
-}
-
-.sidebar .menu > * {
+.menu-item {
+  color: white;
   padding: 10px;
   margin: 5px 0 5px 0;
-  background-color: #444444;
 }
-
-a {
-  color: white;
+.project, .about {
+  margin: 5px 0;
+  padding: 10px;
 }
-
-@media all and (min-width: 600px) {
-  .container    { padding: 0 10% 0 10%; }
-  .sidebar      { flex: 0 auto; }
-  .sidebar img  { width: 10vw; display: unset;}
-  .title        { flex: 3 0px; }
-  .sidebar      { order: 0;}
-  .title        { order: 1;}
-}
-
-@media all and (min-width: 1500px) {
-  .container { padding: 0 15% 0 15%;}
+.project {
+  border: 1pt solid white;
 }
 
 body {
-  padding: 2em;
+  margin: 0;
   font-family: "Courier";
+  background-color: black;
+  color: white;
 }
+a {
+  color: white;
+}
+.section{
+  color: #aaaaaa;
+}
+
+/* Mobile */
+
+.container > * {
+  margin: 0 5px;
+  flex: 1 100%;
+}
+
+.sidebar img { display: none;}
+
+.title { display: none;}
+
+.content { margin-top: -5px;}
+
+
+
+
+/* Desktop */
+
+@media all and (min-width: 600px) {
+  .container    { padding: 30px 10% 30px 10%; }
+  .sidebar      { flex: 0 auto; }
+  .sidebar img  { width: 20vw; display: unset;}
+  .menu-title   { display: none;}
+  .content      { flex: 3 0px; }
+  .title        { display: unset;}
+  .title h2     { text-align: center;}
+}
+
+@media all and (min-width: 1500px) {
+  .container    { padding: 30px 15% 30px 15%;}
+  .sidebar img  { width: 15vw; }
+}
+
+
+
+/* Typed.js stuff */
 
 .typed-cursor{
     opacity: 1;
