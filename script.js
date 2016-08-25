@@ -1,7 +1,7 @@
 // DOM ==============================================
 $(document).ready(function () {
 
-	type("/Projects");
+	type("/About Me");
 
 	$(document).on('click', '.nav-btn', navigate);
 
@@ -17,15 +17,21 @@ function navigate (event) {
 
 	switch (target) {
 		case "projects":
-			$(".about").hide();
-			$(".project").show();
 			type("/Projects");
+			$(".about").fadeOut(function () {
+				$(".projects").fadeIn();
+			});
 			break;
 		case "about":
-			$(".project").hide();
-			$(".about").show();
 			type("/About Me");
+			$(".projects").fadeOut(function () {
+				$(".about").fadeIn();
+			});
 			break;
+		case "portfolio":
+			$("body").fadeOut(function () {
+				window.location.href = "portfolio.html";
+			})
 		default:
 			break;
 	}
