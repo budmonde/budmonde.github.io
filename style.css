@@ -4,107 +4,42 @@ body {
   font-size: 85%;
   line-height: 1.55;
 }
-.disclaimer { font-size: 0.7em;}
-.glyph-social { font-size: 1.5em;}
 
 /* Colors */
 body {
   background-color: black;
   color: white;
 }
-.menu-item {
-  color: white;
-}
-a {
-  color: white;
-}
-.section{
-  color: #aaaaaa;
-}
+.menu-item  { color: white;}
+a           { color: white;}
+.section    { color: #aaaaaa;}
 
 /* Layout */
-.container {
-  display: flex;  
-  flex-flow: row wrap;
-}
-.sidebar { order: 0;}
-.content { order: 1;}
-
-.menu-item {
-  padding: 10px;
-  margin: 5px 0 5px 0;
-}
-
-.project, .about {
-  margin: 5px 0;
-  padding: 10px;
-}
-.project {
-  border: 1pt solid white;
-}
-
 body {
   margin: 0;
   overflow-y: scroll;
 }
-
-/* Mobile */
-
+.container {
+  display: flex;  
+  flex-flow: row wrap;
+}
 .container > * {
   margin: 0 5px;
   flex: 1 100%;
 }
+
+/**Compatibility**/
+
+/* Mobile */
 @media all {
-  .sidebar img { display: none;}
-  .social { letter-spacing: 0.3em;}
+  .content { margin-top: -5px;}  
   .title { display: none;}
-  .content { margin-top: -5px;}
 }
-
 /* Desktop */
-
 @media all and (min-width: 600px) {
-  .container    { padding: 30px 10% 30px 10%; }
-  .sidebar      { flex: 0 auto; }
-  .sidebar img  { width: 20vw; display: unset;}
   .menu-title   { display: none;}
-  .social       { letter-spacing: 0;}
   .content      { flex: 3 0px; }
   .title        { display: unset;}
   .title h2     { text-align: center;}
 }
 
-@media all and (min-width: 800px) {
-  .social       { letter-spacing: 0.5em;}
-}
-
-@media all and (min-width: 1300px) {
-  .container    { padding: 30px 15% 30px 15%;}
-  .sidebar img  { width: 15vw; }
-}
-
-
-
-/* Typed.js stuff */
-
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
