@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Introduction to Webdev</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+  
+  body { font-family: 'Open Sans', sans-serif; }
+  .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+  h3 { font-size: 0.1em; }
+  .gray {
+    color: #555;
+  }
+  .bold {
+    font-weight: 700;
+  }
+  </style>
+</head>
+<body>
+<textarea id="source">
+
+class: center, middle
+
+# Intro to WebDev
+
+#### .gray[HackMIT 2016]
+
+#### .gray[Monde Duinkharjav]
+
+---
+
+# Contents
+
+1. What is a web app?
+
+2. What makes a web page?
+
+3. What delivers a web page?
+
+4. What else can a web app do?
+
+4. What makes a web server?
+
+5. Workshop: Express.js
+
+<br>
+
+Follow along: TODO: link]
+
+---
+
+# What is a web app?
+
+####Website:
+
+- a location in the Internet containing web pages
+
+--
+
+- a more anal definition: a collection of static web pages which is mainly content driven
+
+--
+
+####Web App:
+
+--
+
+- in contrast to a website, dynamic and action driven
+
+- .bold[point is]: it's a more complex system you can't easily create by using a blogging platform
+
+---
+
+## What is a web page
+
+TODO: insert webpage here
+
+---
+
+# What makes a web page?
+
+--
+- HTML
+```html
+<div class="text-box">
+  <p>So text. Much HTML. Wow.</p>
+</div> 
+```
+--
+- CSS
+```css
+.text-box {
+  font-family: "Comic Sans";
+  color: pink;
+  transform: rotate(20deg);
+}
+```
+--
+- Javascript
+```javascript
+var doge = "moar text";
+console.log(doge);
+```
+--
+- Assets: images, fonts, videos blablablabla
+
+---
+
+## What does your browser do?
+
+TODO: insert bad quality picture edited in paint here.
+
+---
+
+class: center, middle
+
+#### So far: if we have all these files, we can display web pages and have them dynamic with the js code.
+
+---
+
+class: center, middle
+
+#### Problem: we can't store all of Facebook on you local machine...
+
+---
+
+class: center, middle
+
+#### Questions so far?
+
+---
+
+class: center, middle
+
+#### Solution: Server
+
+---
+
+# What delivers a web page?
+
+- The server duh.
+
+--
+
+TODO:insert req/res diagram here
+
+---
+
+## A web page request
+
+- Destination + port: https://fb.com:443
+
+- Type: GET
+
+- Other things
+
+---
+
+## is responded with the web page
+
+- Origin: https://fb.com:443
+
+- HTML, CSS, JS, Assets
+
+- Other things
+
+---
+
+# What else can a web app do?
+
+- Ask the server to do other things!
+
+  - Upload photos, edit profile etc.
+
+- More formally, the types of requests:
+
+  - GET to request data and POST to send new data/actions
+
+  - .gray[PUT, DELETE, HEAD, OPTIONS, PATCH blablabla things we don't need to care about]
+
+---
+
+
+</textarea>
+<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+</script>
+<script>
+var slideshow = remark.create();
+</script>
+</body>
+</html>
