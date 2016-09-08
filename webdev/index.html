@@ -15,6 +15,9 @@
   .gray {
     color: #555;
   }
+  .red {
+    color: #f00;
+  }
   .bold {
     font-weight: 700;
   }
@@ -45,7 +48,7 @@ class: center, middle
 
 4. What makes a web server?
 
-5. Workshop: Express.js
+5. Workshop: Very simple web app using Express.js
 
 <br>
 
@@ -71,13 +74,14 @@ Follow along: TODO: link]
 
 - in contrast to a website, dynamic and action driven
 
-- .bold[point is]: it's a more complex system you can't easily create by using a blogging platform
+- .bold[point is]: it's a more complex system you can't easily create by using a something like a blogging platform
 
 ---
 
 ## What is a web page
 
-TODO: insert webpage here
+
+![Webpage demo](webpage.png)
 
 ---
 
@@ -109,10 +113,17 @@ console.log(doge);
 - Assets: images, fonts, videos blablablabla
 
 ---
-
 ## What does your browser do?
 
-TODO: insert bad quality picture edited in paint here.
+--
+
+![Internet Explorer](browser.png)
+
+---
+
+class: center, middle
+
+#### Questions so far?
 
 ---
 
@@ -128,25 +139,13 @@ class: center, middle
 
 ---
 
-class: center, middle
-
-#### Questions so far?
-
----
-
-class: center, middle
-
-#### Solution: Server
-
----
-
 # What delivers a web page?
 
-- The server duh.
+- Solution: a server machine
 
 --
 
-TODO:insert req/res diagram here
+![Req-res diagram](reqres.png)
 
 ---
 
@@ -156,7 +155,7 @@ TODO:insert req/res diagram here
 
 - Type: GET
 
-- Other things
+- Other things: cookies, GPS etc. etc. etc.
 
 ---
 
@@ -166,7 +165,7 @@ TODO:insert req/res diagram here
 
 - HTML, CSS, JS, Assets
 
-- Other things
+- Other things: target address (just in case) blablabla
 
 ---
 
@@ -184,6 +183,79 @@ TODO:insert req/res diagram here
 
 ---
 
+# What makes a web server?
+
+- A good architecture tailored for the tasks a server does
+
+--
+
+#### A server has:
+
+- Routes
+
+- Views
+
+- Assets / access to a databse
+
+---
+
+## Routes
+
+- facebook.com .red[/ budmonde]
+- docs.google.com .red[/ presentation/d/blablabla]
+- xkcd.com .red[/ 1077]
+
+etc. etc.
+
+- A sublocation within the server that triggers a specific action on the server
+
+![Example Route](route.png)
+
+---
+
+## Views
+
+are different templates for inputting data and creating a HTML page.
+
+![FB template](template.png)
+
+---
+
+## Assets / access to a database
+
+- The data the web app stores, manipulates etc.
+
+- CSS, JS files (could be regarded as part of views)
+
+- Fonts, images, etc.
+
+---
+
+## So how do these all fit together?
+
+![Server processing a request](server-work.png)
+
+---
+class: center, middle
+
+# Workshop: Very simple web app using Express.js
+
+---
+
+class: center, middle
+
+#### Node.js installation instructions: 
+
+10 minute break. Please install node.js during this time. We can help out if you have issues.
+
+---
+
+class: center, middle
+
+```terminal
+git clone URL-TO-REPO
+
+```
 
 </textarea>
 <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
