@@ -32,7 +32,7 @@ class: center, middle
 
 #### .gray[HackMIT 2016]
 
-#### .gray[Monde Duinkharjav]
+#### .gray[Monde Duinkharjav & David Wong]
 
 ---
 
@@ -238,7 +238,7 @@ are different templates for inputting data and creating a HTML page.
 ---
 class: center, middle
 
-# Workshop: Very simple web app using Express.js
+# Workshop: Demo web app using Express.js
 
 ---
 
@@ -250,12 +250,89 @@ class: center, middle
 
 ---
 
+## What is Express.js?
+
+- A framework built on Node.js which is a web server framework built on Javascript
+
+--
+
+- Node.js allows you to set up a web server easily using Javascript
+
+- Express.js adds further "infrastructure" to make it easier to build well organized web apps.
+
+---
+
 class: center, middle
 
+Task 0. Clone a bare Express.js application.
 ```terminal
 git clone URL-TO-REPO
 
 ```
+
+---
+
+## Let's see what's inside
+
+```terminal
+bin/  --> config files setting up server stuff and ports
+
+node_modules/ --> node.js packages that make things work
+
+public/   --> public files directly accessible by clients (js, css, fonts etc.)
+
+routes/   --> routes
+
+views/    --> views
+
+app.js    --> the code that instantiates and runs the application
+              configures all other parts of application
+
+package.json  --> application meta data; node.js packages the app uses
+```
+
+---
+
+class: center, middle
+Task 0.1. Let's try running the server locally.
+ 
+```terminal
+cd express-workshop
+
+npm install
+
+npm start
+``` 
+
+---
+
+You should see something like:
+
+### Express
+
+Welcome to Express
+
+---
+
+## What did we just do?
+
+- Downloaded, installed/updated the packages as specified in `package.json`
+
+--
+
+- Started a local node.js server and opened port `3000` to respond to `HTTP` requests. The terminal is now making your computer run the server.
+
+--
+
+- In our browser, accessed the local server at port `3000` and made a `GET` request to route "`/`"
+
+--
+
+- In fact because connecting to the MIT network gives you a public IP address you can make requests from any other computer on the Internet if you know the IP address of the server (your computer).
+
+---
+
+
 
 </textarea>
 <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
