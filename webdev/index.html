@@ -52,7 +52,7 @@ class: center, middle
 
 <br>
 
-Follow along: TODO: link]
+Follow along: TODO: link
 
 ---
 
@@ -266,7 +266,11 @@ class: center, middle
 
 Task 0. Clone a bare Express.js application.
 ```terminal
-git clone URL-TO-REPO
+git clone https://github.com/mit6148/express-workshop.git
+
+cd express-workshop
+
+git checkout tags/v0.0
 
 ```
 
@@ -332,6 +336,120 @@ Welcome to Express
 
 ---
 
+class: center, middle
+
+Task 0.1 Download template HTML.
+
+```terminal
+
+git checkout tags/v0.1
+
+```
+
+![Ugly HTML Form](v0.1.png)
+
+---
+
+class: center, middle
+
+Task 0.2 Basic styling.
+
+```terminal
+
+git checkout tags/v0.2
+
+```
+
+![Tacky HTML Form](v0.2.png)
+
+---
+
+class: center, middle
+
+Task 0.3 Import janky database
+
+
+```terminal
+
+git checkout tags/v0.3
+
+```
+
+---
+
+class: center, middle
+
+Question. Look at `public/db.json` and `routes/index.js`. What do you think the following code does?
+
+```javascript
+
+var db = require('../public/db.json');
+
+```
+
+---
+
+class: center, middle
+
+Harder question. Where would the `db` be printed if we added the following line?
+
+```javascript
+
+var db = require('../public/db.json');
+
+console.log(db);
+
+```
+
+---
+
+class: center, middle
+
+Task 1.0. The real deal. What do we do to add a user?
+
+---
+
+class: center, middle
+
+Task 2.0. What do we do to delete a user?
+
+---
+
+# More advanced topics:
+
+- AJAX using jQuery/Angular.js/React.js
+
+--
+
+- MongoDB -- an actual database system
+
+--
+
+- Meteor -- black magic
+
+--
+
+#### Sources:
+
+- Google
+
+--
+
+- API Documentation. E.g. google "angular.js documentation"
+
+--
+
+- Codeacademy
+
+- `http://6.148.scripts.mit.edu/2016/lectures`
+
+--
+
+If you are interested for more, you can take 6.148 Web Programming Competition over IAP.
+
+You can learn Web Programming, compete and win prizes!
+
+Check out `http://6.148.scripts.mit.edu/2016/` for more info!
 
 
 </textarea>
